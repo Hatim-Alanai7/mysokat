@@ -1,0 +1,16 @@
+# ide folders
+.vs/
+.idea/
+
+# build folders
+[Bb]in/
+[Oo]bj/
+
+# user files
+*.user
+*.suo
+
+# misc files
+.DS_Store
+Desktop.ini
+Thumbs.db

@@ -1,0 +1,11 @@
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe.config
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.pdb
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.AssemblyReference.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.SuggestedBindingRedirects.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Form1.resources
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Properties.Resources.resources
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.GenerateResource.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CoreCompileInputs.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb

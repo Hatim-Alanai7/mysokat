@@ -1,0 +1,125 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Net;
+using System.Net.Sockets;
+using System.IO;
+using System.Threading;
+using Microsoft.VisualBasic;
+
+namespace TCPSend_Server
+{
+    public partial class Form1 : Form
+    {
+        private TcpListener MYTcpListener;
+        private Socket MySocket;
+        private Thread myth;
+        private StreamReader mysr;
+        private NetworkStream MyNetworkStream;
+        private TcpListener MYTcpListener1;
+        private Socket MySocket1;
+        private Thread myth1;
+        Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        IPEndPoint ipe = new IPEndPoint(IPAddress.Any, 6400);
+s.Bind(ipe);
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        delegate void mydle(string d);
+
+        void Show(string msg)
+        {
+            listBox1.Items.Add(msg);
+        }
+        void resv()
+        {
+            //Socket c = s.Accept();
+            while (true)
+            {
+               //int recv;
+              //byte[] data = new byte[1024];
+              //EndPoint ipe= (EndPoint) (ipe);
+              //recv = newsock.ReceiveFrom(data, ref ipe);
+              //Console.WriteLine(Encoding.ASCII.GetString(data, 0, recv)); 
+
+                EndPoint ip = (EndPoint)ipe;
+                byte[] bf = new byte[1000];
+                s.ReceiveFrom(bf, ref ip);
+                string msg = UnicodeEncoding.Unicode.GetString(bf);
+                this.Invoke(new mydle(Show), msg);
+
+            }
+        }
+
+        public void REcivedData()
+        {
+            
+            
+
+                s.Listen(-1);
+                 s.Accept(); 
+
+
+                while (true)
+                {
+                   
+                        
+                        MyNetworkStream = new NetworkStream(s);
+                        mysr = new StreamReader(MyNetworkStream);
+                        Console.Write(mysr);
+                        s.Close();
+                   
+            }
+           
+        }
+
+
+
+
+
+        void REcivedDataimage()
+        {
+            
+           
+                s.Listen(-1);
+                s.Accept(); 
+
+
+
+                while (true)
+                {
+                //byte[]Received=new byte[1024];
+               //s.Receive(Received); 
+            }
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.listBox1.Items.Clear();
+            this.listBox1.Items.Add("MySocket.TextBox=" + MySocket.RemoteEndPoint.ToString());
+            this.listBox1.Items.Add("MySocket.Connected=" + MySocket.Connected);
+            this.listBox1.Items.Add("MYTcpListener.LocalEndpoint=" + MYTcpListener.LocalEndpoint.ToString());
+            this.listBox1.Items.Add("MYTcpListener.Server=" + MYTcpListener.Server.ToString());
+            this.listBox1.Items.Add("MYTcpListener.ExclusiveAddressUse=" + MYTcpListener.ExclusiveAddressUse.ToString());
+            this.listBox1.Items.Add("MySocket.Available=" + MySocket.Available);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            myth = new Thread(new ThreadStart(REcivedData));
+            myth.Start();
+            myth1 = new Thread(new ThreadStart(REcivedDataimage));
+            myth1.Start();
+        }
+    }
+}

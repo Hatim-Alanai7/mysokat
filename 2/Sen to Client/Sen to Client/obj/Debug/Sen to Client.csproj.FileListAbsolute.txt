@@ -1,0 +1,11 @@
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\bin\Debug\Sen to Client.exe.config
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\bin\Debug\Sen to Client.exe
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\bin\Debug\Sen to Client.pdb
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\obj\Debug\Sen to Client.csproj.AssemblyReference.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\obj\Debug\Sen to Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\obj\Debug\Sen_to_Client.Form1.resources
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\obj\Debug\Sen_to_Client.Properties.Resources.resources
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\obj\Debug\Sen to Client.csproj.GenerateResource.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\obj\Debug\Sen to Client.csproj.CoreCompileInputs.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\obj\Debug\Sen to Client.exe
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Sen to Client\Sen to Client\obj\Debug\Sen to Client.pdb

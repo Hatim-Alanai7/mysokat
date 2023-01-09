@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "762c0ca1-91bd-478d-8000-c6c17c659656": {
+      "ProjectGuid": "762c0ca1-91bd-478d-8000-c6c17c659656",
+      "DisplayName": "TCPSend_Server",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

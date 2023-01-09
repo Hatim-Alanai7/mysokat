@@ -1,0 +1,135 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
+using System.IO;
+using Microsoft.VisualBasic;
+
+
+namespace TCPSend_Clien
+{
+    public partial class Form1 : Form
+    {
+        private TcpClient myclient981;
+        private BinaryWriter mysw981;
+        private NetworkStream networkStream;
+        Socket r = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        IPEndPoint ipe = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 6400);
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+
+
+        delegate void mydle(string d);
+
+        void Show(string msg)
+        {
+            listBox1.Items.Add(msg); 
+        }
+
+        void resv()
+        {
+            //Socket c = s.Accept();
+            while (true)
+            {
+                EndPoint ip = (EndPoint)ipe;
+                byte[] bf = new byte[1024];
+                r.ReceiveFrom(bf, ref ip);
+                string msg = UnicodeEncoding.Unicode.GetString(bf);
+                this.Invoke(new mydle(Show), msg);
+
+            }
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.openFileDialog1.Filter = "JPeg Image|*.jpg|Bitmap Image|*.bmp|Gif Image|*.gif|Png Image|*.Png";
+            if (this.openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.pictureBox1.Image = Image.FromFile(this.openFileDialog1.FileName);
+            }
+            try
+            {
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Image a12 = pictureBox1.Image;
+            MemoryStream MY_MemoryStream = new MemoryStream();
+            a12.Save(MY_MemoryStream, System.Drawing.Imaging.ImageFormat.Jpeg);
+            byte[] ArrImage = MY_MemoryStream.GetBuffer(); // here change it to Bytes
+            MY_MemoryStream.Close();
+            r.SendTo(ArrImage.Length, SocketFlags.Broadcast, ipe);
+            //try
+            //{
+            //    myclient981 = new TcpClient(ip_TextBox1.Text, 6400);
+            //    networkStream = myclient981.GetStream();
+            //    mysw981 = new BinaryWriter(networkStream);
+            //    mysw981.Write(ArrImage);
+            //    networkStream.Close();
+            //    myclient981.Close();
+              //  Socket r = new Socket(AddressFamily.InterNetwork, SocketType.Stream,ProtocolType.Tcp);
+              //  IPEndPoint remote = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 6400);
+              //  r.Connect(remote);
+              //  r.Send(ArrImage);
+              //  r.Close();
+
+            //}
+            //catch (Exception ex) 
+            //{ 
+            //    MessageBox.Show(ex.Message); 
+            //}
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          //string welcome = "Hello All";
+         // data = Encoding.ASCII.GetBytes(strr);
+         // r.SendTo(data, data.Length, SocketFlags.Broadcast, ipe);
+
+            String strr = Console.ReadLine(textBox1.Text);
+            MemoryStream text = new MemoryStream();
+            ASCIIEncoding asen = new ASCIIEncoding();
+            byte[] ba = asen.GetBytes(strr);
+            r.SendTo(ba, ipe);
+            Thread th = new Thread(new ThreadStart(resv));
+            th.Start();
+            //try
+            //{
+            //    myclient981 = new TcpClient(ip_TextBox1.Text, 6400);
+            //    networkStream = myclient981.GetStream();
+            //    mysw981 = new BinaryWriter(networkStream);
+            //    mysw981.Write(ba);
+            //    networkStream.Close();
+            //    myclient981.Close();
+             //   Socket r = new Socket(AddressFamily.InterNetwork, SocketType.Stream,ProtocolType.Tcp);
+               // IPEndPoint remote = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 6400);
+               // r.Connect(remote);
+                //r.Send(ba);
+                //r.Close();
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+
+        }
+    }
+}

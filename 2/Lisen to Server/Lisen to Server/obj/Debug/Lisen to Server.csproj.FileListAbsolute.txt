@@ -1,0 +1,11 @@
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\bin\Debug\Lisen to Server.exe.config
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\bin\Debug\Lisen to Server.exe
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\bin\Debug\Lisen to Server.pdb
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\obj\Debug\Lisen to Server.csproj.AssemblyReference.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\obj\Debug\Lisen to Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\obj\Debug\Lisen_to_Server.Form1.resources
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\obj\Debug\Lisen_to_Server.Properties.Resources.resources
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\obj\Debug\Lisen to Server.csproj.GenerateResource.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\obj\Debug\Lisen to Server.csproj.CoreCompileInputs.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\obj\Debug\Lisen to Server.exe
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\Lisen to Server\Lisen to Server\obj\Debug\Lisen to Server.pdb

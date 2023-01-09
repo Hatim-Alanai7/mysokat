@@ -1,0 +1,13 @@
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WebCam_Capture.dll
+C:\Users\HATIM\Documents\Visual Studio 2022\Hatim_Alansi\2\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete

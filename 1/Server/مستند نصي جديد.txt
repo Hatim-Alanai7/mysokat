@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
+namespace TCPServer
+{
+    public partial class Form1 : Form
+    {
+        EndPoint ip;
+        Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+        IPEndPoint ipe = new IPEndPoint(IPAddress.Any, 6400);
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        delegate void mydle(string d);
+
+        void Show(string msg)
+        {
+            listBox1.Items.Add(msg);
+        }
+
+        void resv()
+        {
+            //Socket c = s.Accept();
+             ip = (EndPoint)ipe;
+            while (true)
+            {
+               
+                byte[] bf = new byte[1000];
+                s.ReceiveFrom(bf, ref ip);
+                string msg = UnicodeEncoding.Unicode.GetString(bf);
+                this.Invoke(new mydle(Show), msg);
+
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            s.Bind(ipe);
+            //s.Listen(-1);
+            Thread th = new Thread(new ThreadStart(resv));
+            th.Start();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            byte[] b = UnicodeEncoding.Unicode.GetBytes(textBox1.Text);
+            s.SendTo(b, ip);
+        }
+    }
+}

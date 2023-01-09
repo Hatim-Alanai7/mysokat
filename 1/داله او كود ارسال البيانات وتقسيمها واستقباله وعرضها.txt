@@ -1,0 +1,96 @@
+  public void ds()
+        {
+
+            String strr = message_TextBox.Text;
+            ASCIIEncoding asen = new ASCIIEncoding();
+            byte[] b = asen.GetBytes(strr);
+            string s64 = Convert.ToBase64String(b);
+            string type = "Image";
+            string data = type + "||" + s64;
+            byte[] senddata = asen.GetBytes(data);
+
+           
+            try
+            {
+                myclient981 = new TcpClient(ip_TextBox1.Text, int.Parse(pore_textBox.Text));
+                networkStream = myclient981.GetStream();
+                mysw981 = new BinaryWriter(networkStream);
+                mysw981.Write(senddata);
+                networkStream.Close();
+                myclient981.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+
+
+
+========================================================================
+
+ public void ds()
+        {
+
+            string strr = message_TextBox.Text;
+            ASCIIEncoding asen = new ASCIIEncoding();
+            byte[] b = asen.GetBytes(strr);
+            string s64 = Convert.ToBase64String(b);
+            string type = "Image";
+            string data = type + "||" + s64;
+            byte[] senddata = asen.GetBytes(data);
+
+            string s = asen.GetString(senddata);
+            string[] ss = s.Split("||");
+            string typ =ss[0];
+          
+            if (typ == "Image")
+            {
+                byte[] imgs = Convert.FromBase64String(ss[1]);
+                imgs = asen.GetBytes(ss[1]);
+
+                
+                    MYTcpListener1 = new TcpListener(IPAddress.Any, int.Parse(pore_textBox.Text));
+                    MYTcpListener1.Start();
+
+
+                    while (true)
+                    {
+                        try
+                        {
+                            MySocket1 = MYTcpListener1.AcceptSocket();
+                            MyNetworkStream = new NetworkStream(MySocket1);
+
+                            this.pictureBox1.Image = Image.FromStream(MyNetworkStream);
+                        }
+
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+                
+               
+
+            }
+            
+
+        }
+==============================================================
+
+static IEnumerable< > ( string Split string int str, chunkSize)
+{
+return Enumerable.Range( , str.Length / chunkSize) 0
+ .Select(i => str.Substring(i * chunkSize, chunkSize));
+}
+
+====================================================
+
+static IEnumerable< > ( string ChunksUpto string int str, maxChunkSize) {
+for ( i = ; i < str.Length; i += maxChunkSize) int 0
+yield return str.Substring(i, Math.Min(maxChunkSize, str.Length-i));
+}
+=====================================================
